@@ -1,0 +1,52 @@
+/* Définition des styles pour les éléments de la page */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0; /* Annulation de la marge par défaut du navigateur */
+      }
+
+      header {
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center; /* Alignement du texte au centre de l'élément */
+      }
+
+      /* Styles pour les éléments avec la classe "container" */
+      .container {
+        max-width: 800px; /* Largeur maximale de l'élément */
+        margin: 0 auto; /* Centrage de l'élément sur la page */
+        display: flex; /* Affichage en mode "flex" pour permettre un alignement horizontal */
+        flex-wrap: wrap; /* Autorisation du retour à la ligne en cas de dépassement de la largeur maximale */
+      }
+
+      /* Styles pour les éléments avec la classe "card" */
+      .card {
+        background-color: white;
+        border: 1px solid gray;
+        width: calc(33% - 50px); /* Largeur de l'élément en fonction de la largeur maximale du parent */
+        margin: 10px; /* Marge entre les éléments */
+        text-align: center; /* Alignement du texte au centre de l'élément */
+      }
+
+      /* Styles pour les éléments avec la classe "card-title" */
+      .card-title {
+        font-size: 24px;
+        margin: 20px 0; /* Marge en haut et en bas de l'élément */
+      }
+
+      /* Styles pour les éléments avec la classe "card-text" */
+      .card-text {
+        font-size: 18px;
+        padding: 0 20px; /* Marge intérieure de l'élément */
+      }
+
+      /* Media-queries pour définir des styles spécifiques pour différentes tailles d'écran */
+      @media (max-width: 844px) {
+        /* Styles pour les écrans de largeur maximale de 600px ou moins */
+        .card {
+          width: 100%; /* Largeur maximale pour les écrans plus petits */
+        }
+        .card-title{
+          color: red;
+          font-size: 50px;
+        }
+      }
